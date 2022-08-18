@@ -27,16 +27,27 @@ public class Atletas_Java {
 				System.out.println("invalido! Favor digitar F ou M: ");
 				gender = sc.next().charAt(0);
 			}
+
+			System.out.print("Altura: ");
+			double height = sc.nextDouble();
+			while (height <= 0) {
+				System.out.println("Valor invalido! Favor digitar um valor positivo: ");
+				height = sc.nextDouble();
+			}
+
 			System.out.print("Peso: ");
 			double weight = sc.nextDouble();
-			
+
 			while (weight <= 0) {
 
 				System.out.println("Valor invalido! Favor digitar um valor positivo: ");
 				weight = sc.nextDouble();
 			}
+			
+		System.out.println("RELATÓRIO: ");
+		System.out.printf("Peso médio dos atletas:  %.2f%n",);
+
 		}
-		
 
 	}
 
